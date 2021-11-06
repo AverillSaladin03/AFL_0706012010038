@@ -30,7 +30,6 @@
                     @if ($publish['publisher_code'] != $manga->publisher->publisher_code)
                         <option value="{{$publish['publisher_code']}}">{{$publish['publisher_name']}}</option>
                     @endif
-
                 @endforeach
             </select>
 
