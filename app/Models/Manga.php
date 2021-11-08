@@ -9,7 +9,7 @@ class Manga extends Model
 {
     use HasFactory;
 
-    protected $mangatachi = 'mangatachi';
+    protected $table = 'mangas';
     protected $fillable = ['manga_code', 'manga_title', 'manga_kanji', 'manga_release_date', 'manga_author', 'published_at'];
     protected $primaryKey = 'manga_code';
     protected $keyType = 'string';
