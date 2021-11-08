@@ -65,7 +65,8 @@ class MangaController extends Controller
     public function show($code)
     {
         //
-        $mangas = Manga::where('manga_code', $code)->first();
+        // $mangas = Manga::where('manga_code', $code)->first();
+        $mangas = Manga::findOrFail($code);
         $title = "Manga Detail";
         $pageTitle = $mangas->manga_title."'s Detail";
 
@@ -98,7 +99,8 @@ class MangaController extends Controller
     public function update(Request $request, $code)
     {
         //
-        $manga = Manga::where('manga_code', $code)->first();
+        // $manga = Manga::where('manga_code', $code)->first();
+        $manga = Manga::findOrFail($code);
         $manga->update([
             'manga_code' => $request->manga_code,
             'manga_title' => $request->manga_title,

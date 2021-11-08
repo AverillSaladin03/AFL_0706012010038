@@ -13,7 +13,7 @@
             <label class="mb-1 fw-bold">Code</label>
             <input type="text" class="form-control" name="manga_code" placeholder="Manga Code (max. 3 letters)" maxlength="3">
             <label class="mb-1 fw-bold">Title</label>
-            <input type="text" class="form-control" name="manga_title" placeholder="Project Name">
+            <input type="text" class="form-control" name="manga_title" placeholder="Title">
             <label class="mb-1 fw-bold">Author</label>
             <input type="text" class="form-control" name="manga_author" placeholder="Author">
             <label class="mb-1 fw-bold">Japanese Title</label>

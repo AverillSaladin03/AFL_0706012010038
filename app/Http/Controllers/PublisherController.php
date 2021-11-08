@@ -67,7 +67,8 @@ class PublisherController extends Controller
      */
     public function show($code)
     {
-        $publishers = Publisher::where('publisher_code', $code)->first();
+        // $publishers = Publisher::where('publisher_code', $code)->first();
+        $publishers = Publisher::findOrFail($code);
         $title = "Publisher Detail";
         $pageTitle = $publishers->publisher_name."'s Details";
         return view('publisherdesc', compact('title', 'pageTitle', 'publishers'));
@@ -98,7 +99,7 @@ class PublisherController extends Controller
     public function update(Request $request, $code)
     {
         //
-        $publishers = Publisher::where('publisher_code', $code);
+        $publishers = Publisher::findOrFail($code);
 
         $publishers->update([
             'publisher_code' => $request->publisher_code,

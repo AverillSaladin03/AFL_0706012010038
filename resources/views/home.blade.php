@@ -7,7 +7,7 @@
 @endsection
 
 @section("content")
-    <div class="card row bg-dark d-block border-light outline-light p-3 mt-3 mb-5">
+    <div class="card row bg-dark d-block border-dark outline-light p-3 mt-3 mb-5">
         <div class="card col-sm-5 d-inline-flex justify-content-center bg-dark p-3 border border-warning m-5">
             <div class="text-center fw-bold m-5">
                 <a class= "text-decoration-none text-white" href="{{route('publishers.index')}}">
